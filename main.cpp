@@ -61,16 +61,6 @@ private:
 	{
 		HRESULT hr = 0;
 
-		/*HDESK hDesk = OpenDesktopA("Teehee", 0, FALSE, GENERIC_ALL);
-
-		//HDESK hDesk = OpenInputDesktop(0, FALSE, GENERIC_ALL);
-		if (!hDesk)
-			return E_FAIL;
-
-		// Attach desktop to this thread (presumably for cases where this is not the main/UI thread)
-		BOOL res = SetThreadDesktop(hDesk);
-		CloseDesktop(hDesk);*/
-
 		UINT createDeviceFlags = 0;
 		D3D_FEATURE_LEVEL featureLevels[] =
 		{
